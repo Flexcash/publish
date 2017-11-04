@@ -361,6 +361,6 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('default', ['production']);
+    grunt.registerTask('default', ['prod']);
 
 };

@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "start": "grunt production"
+    "start": "grunt prod"
   },
   "dependencies": {
     "grunt": "^0.4.5",

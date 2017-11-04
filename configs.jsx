@@ -21,12 +21,12 @@ define([], function() {
 
   switch (window.location.host) {
 
-    case 'getaroom.io':
+    case 'rwong.heroku.com':
       config = {
         env: 'prod',
         Skylink: {
-          apiMCUKey: '92898880-ab04-4f94-a82f-cabd7c0d120c',
-          apiNoMCUKey: '691e9702-bdde-4611-889e-8c57eacbcfca'
+          apiMCUKey: '68e78643-370a-48e7-a9da-543dbe7b735a',
+          apiNoMCUKey: '68e78643-370a-48e7-a9da-543dbe7b735a'
         },
       };
       break;
