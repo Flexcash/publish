@@ -219,8 +219,8 @@ module.exports = function (grunt) {
                 options: {
                     base: '<%= source %>/',
                     port: process.env.PORT || 8085,
-                    open: 'http://rwong.heroku.com',
-                    protocol: 'http',
+                    open: 'https://rwong.heroku.com',
+                    protocol: 'https',
                     //key: grunt.file.read('server.key').toString(),
                     //cert: grunt.file.read('server.crt').toString(),
                     //ca: grunt.file.read('ca.crt').toString()
@@ -230,8 +230,8 @@ module.exports = function (grunt) {
                 options: {
                     base: '<%= production %>/',
                     port: process.env.PORT || 8080,
-                    open: 'http://rwong.heroku.com',
-                    protocol: 'http',
+                    open: 'https://rwong.heroku.com',
+                    protocol: 'https',
                     key: grunt.file.read('server.key').toString(),
                     cert: grunt.file.read('server.crt').toString(),
                     ca: grunt.file.read('ca.crt').toString()
@@ -357,7 +357,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', [
         'stylus:dev',
         'react:dev',
-        'connect:dev',
+        'connect:production',
         'watch'
     ]);
 
